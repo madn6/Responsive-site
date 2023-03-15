@@ -1,0 +1,20 @@
+//Shadow
+
+$shadow-1: drop-shadow(0 20px 30px hsla(0, 0%, 0%, 0.1));
+$shadow-2: drop-shadow(0 20px 30px hsla(0, 0%, 0%, 0.2));
+
+//Border Radius
+
+$radius-24: 24px;
+$radius-40: 40px;
+$radius-pill: 500px;
+
+// Transition
+
+$transition-1: 250ms ease;
+$transition-2: 500ms ease;
+$cubic-out: cubic-bezier(0, 1, 0.5, 1);
+
+//Spacing
+
+$section-spacing: 100px;

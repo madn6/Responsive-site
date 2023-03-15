@@ -1,0 +1,27 @@
+@import "partials";
+@import "layouts";
+@import "components";
+
+html{
+	font-family: $fontFamily;
+	font-size: 10px;
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: $bg-russian-violet;
+	color: $text-white-alpha-60;
+	font-size: $fontSize-6;
+	line-height: 1.8;
+	user-select: none;
+}
+
+body.nav-active{
+	overflow: hidden;
+}
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+@import "../partials";
+
+.work-card {
+    .card-banner {
+        border-radius: $radius-40;
+        margin-block-end: 20px;
+    }
+
+    &:is(:hover, :focus-within) .img-cover {
+        transform: scale(1.1);
+		transition: $transition-2;
+    }
+
+    .card-title {
+        margin-block-end: 12px;
+		transition: $transition-1;
+    }
+
+    .card-title:is(:hover, :focus-visible) {
+        color: $bg-sunglow;
+    }
+}
+
+.works {
+    margin-inline: 16px;
+    .btn {
+        margin-block-start: 60px;
+        margin-inline: auto;
+    }
+
+	.section__title{
+		color: $text-white;
+	}
+}

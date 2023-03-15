@@ -1,0 +1,79 @@
+@import "../partials/index";
+
+.header .btn {
+    display: none;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-block: 30px;
+    z-index: 4;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo img {
+        width: 160px;
+    }
+}
+
+.nav-open-btn {
+    color: $text-white;
+    font-size: 3rem;
+}
+
+.nav-open-btn.active .menu-icon,
+.nav-open-btn .close-icon {
+    display: none;
+}
+.nav-open-btn .menu-icon,
+.nav-open-btn.active .close-icon {
+    display: block;
+}
+
+.navbar {
+    position: absolute;
+    top: 100%;
+    right: 16px;
+    background-color: $bg-vivid-violet;
+    color: $text-white;
+    padding: 16px 30px;
+    border-radius: $radius-24;
+    opacity: 0;
+    visibility: hidden;
+    transition: 500ms $cubic-out;
+    z-index: 1;
+}
+
+.navbar.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-15px);
+}
+
+.navbar__list > li:not(:last-child) {
+    margin-block-end: 5px;
+}
+
+.navbar__link {
+    font-weight: $weight-medium;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.overlay.active {
+    pointer-events: all;
+}

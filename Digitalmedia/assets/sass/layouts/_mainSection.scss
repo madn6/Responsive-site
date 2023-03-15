@@ -1,0 +1,49 @@
+@import '../partials/index';
+
+
+.main{
+	padding-block-start: 130px;
+	background-image: url('../../images/hero-bg.png');
+	background-repeat:no-repeat ;
+	background-position: center;
+	background-size: cover;
+
+	&__container{
+		display: grid;
+		gap: 30px;
+	    margin-inline: 16px;
+	}
+
+	.hero__text{
+		margin-block: 25px;
+	}
+
+	.input__field{
+		height: 62px;
+		padding-inline: 30px;
+		background-color: $bg-white-alpha-10;
+		border-radius:$radius-pill;
+		color: $text-white;
+
+	}
+
+	.input__field::placeholder{
+		color: $text-white-alpha-60;
+	}
+	
+	.input__field:focus{
+		box-shadow: inset  0 0 0 1px $border-white-alpha-10;
+	}
+
+	.btn{
+		margin-block-start: 15px;
+	}
+
+	.shape{
+		display: none;
+	}
+}
+
+.hero__banner .w__100{
+	max-width: max-content;
+}

@@ -1,0 +1,40 @@
+@import "../partials/";
+
+.process {
+    position: relative;
+    z-index: 1;
+	margin-inline: 16px;
+
+	.section__title{
+		color: $text-white;
+	}
+	
+    .process__banner {
+        display: none;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../../images/process-banner.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: cover;
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    .item__icon {
+        margin: auto;
+        filter: $shadow-1;
+    }
+    .item__title {
+        margin-block: 20px 10px;
+    }
+}
+
+
